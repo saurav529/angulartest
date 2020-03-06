@@ -1,0 +1,36 @@
+<ul>
+  <li *ngFor="let course of courses">{{course}}</li>
+</ul>
+
+<table border="1px">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let user of userData">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+  </tr>
+  </tbody>
+</table>
+
+<table border="1px">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let data of userList | async">
+    <td>{{data.userId}}</td>
+    <td>{{data.title | uppercase}}</td>
+  </tr>
+  </tbody>
+</table>
+
