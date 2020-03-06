@@ -34,3 +34,11 @@
   </tbody>
 </table>
 
+<div>
+  <h1>Images</h1>
+  <div style="border: 2px solid red" *ngFor="let image of imageData | async">
+    <p>Title : {{image.title}}</p>
+    <img src="{{image.thumbnailUrl}}" style="border-radius: 40px;" alt="image"/>
+  </div>
+</div>
+

@@ -24,15 +24,22 @@ export class AppComponent implements OnInit {
   ];
 
   userList;
+  imageData;
 
   constructor(private http: HttpClient) {
   }
 
   ngOnInit() {
     this.userList = this.getData();
+    this.imageData = this.getImages();
+    console.log(this.imageData);
   }
 
   getData() {
     return this.http.get('https://jsonplaceholder.typicode.com/posts');
+  }
+
+  getImages() {
+    return this.http.get('https://jsonplaceholder.typicode.com/photos');
   }
 }
