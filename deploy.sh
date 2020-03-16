@@ -1,5 +1,5 @@
-#rm -rf docs
-#ng build --prod --output-path docs --base-href /angulartest/
+rm -rf docs
+ng build --prod --output-path docs --base-href /angulartest/
 git add src/*
 git add docs
 git add docs/*
