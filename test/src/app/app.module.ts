@@ -3,23 +3,26 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {TestComponent} from './test/test.component';
+
 import {HttpClientModule} from '@angular/common/http';
-import { LoginComponent } from './login/login.component';
-import { GalleryComponent } from './gallery/gallery.component';
+import {LoginComponent} from './login/login.component';
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
-    LoginComponent,
-    GalleryComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      { path: '', component: LoginComponent },
+      { path: 'test', component: AppComponent },
+      { path: 'login', component: LoginComponent },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
