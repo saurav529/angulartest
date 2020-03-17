@@ -29,6 +29,9 @@ export class AppComponent {
             case '/login':
               this.pageTitle = 'Login Page';
               break;
+            case '/api-call':
+              this.pageTitle = 'Api Test Page';
+              break;
           }
           console.log(`page_path: ${event.urlAfterRedirects}, page_title: ${this.pageTitle}`);
           gtag('config', 'UA-103072673-1', {page_path: event.urlAfterRedirects, page_title: this.pageTitle});
