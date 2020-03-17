@@ -8,6 +8,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ApiRequestComponent } from './api-request/api-request.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     TestComponent,
     LoginComponent,
     GalleryComponent,
-    HomepageComponent
+    HomepageComponent,
+    ApiRequestComponent
   ],
   imports: [
     BrowserModule,

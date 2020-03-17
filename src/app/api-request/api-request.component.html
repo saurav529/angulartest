@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">5000 Images</h1><br>
+
+  <div class="row text-center text-lg-left">
+
+    <div class="col-lg-3 col-md-4 col-6" *ngFor="let image of imageData | async">
+      <a href="#" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail" src="{{image.url}}" alt="">
+      </a>
+    </div>
+  </div>
+</div>
