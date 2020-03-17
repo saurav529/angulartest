@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {NavigationEnd, Router} from '@angular/router';
 
+// tslint:disable-next-line:ban-types
 declare let gtag: Function;
 
 @Component({
@@ -15,7 +16,7 @@ export class AppComponent {
     this.router.events.subscribe(event => {
         if (event instanceof NavigationEnd) {
           console.log(event.urlAfterRedirects);
-          gtag('config', 'G-ZDZBPHGED8', {page_path: event.urlAfterRedirects});
+          gtag('config', 'UA-103072673-1', {page_path: event.urlAfterRedirects});
         }
       }
     );
