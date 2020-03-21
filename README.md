@@ -1,7 +1,7 @@
 # Angulartest
 
 ### `Deployment Status`
-## This project is deployed at [sauravbhandari.me/react-test](http://sauravbhandari.me/react-test).
+## This project is deployed at [sauravbhandari.me/angulartest](http://sauravbhandari.me/angulartest).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
